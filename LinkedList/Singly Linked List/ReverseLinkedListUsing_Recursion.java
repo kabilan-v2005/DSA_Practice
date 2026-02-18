@@ -1,12 +1,5 @@
-
-
 public class ReverseLinkedListUsing_Recursion {
-    
-
-
-        Node head;  // head of the list
-    
-        // Node class
+        Node head; 
         class Node {
             int data;
             Node next;
@@ -16,8 +9,6 @@ public class ReverseLinkedListUsing_Recursion {
                 this.next = null;
             }
         }
-    
-        // Insert at end
         public void insert(int data) {
             Node newnode = new Node(data);
             if (head == null) {
@@ -30,8 +21,6 @@ public class ReverseLinkedListUsing_Recursion {
             }
             temp.next = newnode;
         }
-    
-        // Display linked list
         public void display() {
             Node temp = head;
             while (temp != null) {
@@ -49,14 +38,14 @@ public class ReverseLinkedListUsing_Recursion {
             head.next = null;
             return newHead;
         }
-    
-        // Main method
         public static void main(String[] args) {
             try{
             ReverseLinkedListUsing_Recursion list = new ReverseLinkedListUsing_Recursion();
-            list.insert(10);
-            list.insert(20);
-            list.insert(30);
+            list.insert(1);            
+            list.insert(2);
+            list.insert(3);
+            list.insert(4);
+            list.insert(5);
             list.display();
             list.head=list.reverse(list.head);
             list.display();
