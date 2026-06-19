@@ -35,7 +35,7 @@ public class SparseMatrix {
     }
 
     // Display sparse matrix
-    void display() {
+    void printList() {
         if (head == null) {
             System.out.println("Sparse matrix is empty");
             return;
@@ -68,7 +68,7 @@ public class SparseMatrix {
             }
         }
 
-        sm.display();
+        sm.printList();
         sc.close();
     }
 }
